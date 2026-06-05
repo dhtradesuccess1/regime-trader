@@ -1,0 +1,13 @@
+[run]
+source = .
+omit =
+    venv/*
+    tests/*
+    */__init__.py
+    monitoring/dashboard/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    raise NotImplementedError
